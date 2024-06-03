@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getelementByName</title>
+</head>
+<body>
+    <p>parágrafo 1</p>
+    <p>Parágrafo 2</p>
+    <p>Paragráfo 3</p>
+    <script>
+    var paragraphs = document.getElementsByTagName("p");
+    console.log(paragraphs.length);  // Saída: 3
+    for (var i = 0; i < paragraphs.length; i++) {
+      console.log(paragraphs[i].textContent);
+    }
+    </script>
+</body>
+</html>

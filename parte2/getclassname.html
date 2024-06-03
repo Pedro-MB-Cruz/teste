@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de getElementsByClassName</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="highlight">Div 1</div>
+  <div class="highlight">Div 2</div>
+  <div>Div 3</div>
+  <div class="highlight">Div 4</div>
+
+  <button onclick="highlightElements()">Destacar Elementos</button>
+  
+  <script>
+    function highlightElements() {
+      var elements = document.getElementsByClassName("highlight");
+      console.log("Número de elementos com a classe 'highlight': " + elements.length);
+      for (var i = 0; i < elements.length; i++) {
+        elements[i].style.color = "red";  // Alterar a cor do texto dos elementos destacados
+        console.log(elements[i].textContent);  // Exibir o conteúdo de texto dos elementos destacados
+      }
+    }
+  </script>
+</body>
+</html>
